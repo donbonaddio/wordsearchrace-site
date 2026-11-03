@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Search Race — race your family in Messages</title>
+<meta name="description" content="Word Search Race: a daily word search you can race family and friends on, right inside Messages. Support: don@donstech.com.">
+<meta property="og:title" content="Word Search Race">
+<meta property="og:description" content="A new puzzle every day, the same grid for everyone. Race family and friends right inside Messages.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1D4ED8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233AA0FF'/%3E%3Cpath d='M24 76 L76 24' stroke='%23FFD43B' stroke-width='18' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root { --blue-top: #3aa0ff; --blue-bottom: #1d4ed8; --yellow: #ffd43b; --navy: #12264f; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { min-height: 100%; }
+  body {
+    background: linear-gradient(160deg, var(--blue-top), var(--blue-bottom)) fixed;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  .logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 150px;
+    height: 150px;
+    padding: 14px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.14);
+    position: relative;
+    margin-bottom: 2.2rem;
+    font-weight: 900;
+    font-size: 26px;
+  }
+  .logo::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 32px;
+    background: var(--yellow);
+    border-radius: 16px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .logo span { position: relative; display: grid; place-items: center; }
+  .logo .hit { color: var(--navy); }
+  h1 { font-size: clamp(2.6rem, 11vw, 4.6rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1; }
+  h1 em { font-style: normal; color: var(--yellow); }
+  .tagline {
+    margin-top: 1.1rem;
+    font-size: clamp(1.1rem, 4.6vw, 1.4rem);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 26ch;
+    line-height: 1.4;
+  }
+  .badge {
+    margin-top: 2.2rem;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    background: var(--yellow);
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    margin-top: 2.4rem;
+    display: grid;
+    gap: 0.6rem;
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.92);
+  }
+  footer { margin-top: 3rem; font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.8; }
+  footer a { color: #fff; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="logo" aria-hidden="true">
+    <span>S</span><span>W</span><span>O</span><span class="hit">E</span>
+    <span>T</span><span>K</span><span class="hit">C</span><span>M</span>
+    <span>L</span><span class="hit">A</span><span>N</span><span>P</span>
+    <span class="hit">R</span><span>I</span><span>D</span><span>G</span>
+  </div>
+  <h1>Word Search <em>RACE</em></h1>
+  <p class="tagline">A new puzzle every day. Race your family right inside Messages.</p>
+  <!-- When the app is live, change this to the App Store link and the text to "Get it on the App Store". -->
+  <a class="badge" href="mailto:don@donstech.com?subject=Word%20Search%20Race">Coming soon to the App Store</a>
+  <ul>
+    <li>📅 The Daily: same grid for everyone</li>
+    <li>💬 Race friends in any iMessage chat</li>
+    <li>🔥 Keep your streak going</li>
+  </ul>
+  <footer>
+    Questions or problems? Email <a href="mailto:don@donstech.com?subject=Word%20Search%20Race">don@donstech.com</a><br>
+    <a href="/privacy.html">Privacy Policy</a> · A <a href="https://donstech.com">donstech</a> app
+  </footer>
+</body>
+</html>
